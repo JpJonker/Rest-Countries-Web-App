@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 
   gap: 1em;
 
@@ -21,10 +21,24 @@
     flex-direction: column;
     gap: 1em;
 
+    padding: 0 1em;
+
+    h3 {
+      font-weight: 800;
+    }
+
     .countryCardInfo {
       display: flex;
       flex-direction: column;
       gap: 0.5em;
+
+      h4 {
+        font-weight: 600;
+
+        .countryDetails {
+          font-weight: 300;
+        }
+      }
     }
   }
 }

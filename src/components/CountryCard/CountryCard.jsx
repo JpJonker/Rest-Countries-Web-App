@@ -9,9 +9,15 @@ const CountryCard = ({ data }) => {
       <div className='countryCardContent'>
         <h3>{data.name.common}</h3>
         <div className='countryCardInfo'>
-          <h4>Population: {data.population}</h4>
-          <h4>Region: {data.region} </h4>
-          <h4>Capital: {data.capital}</h4>
+          <h4>
+            Population:<span className='countryDetails'> {data.population}</span>
+          </h4>
+          <h4>
+            Region:<span className='countryDetails'> {data.region}</span>
+          </h4>
+          <h4>
+            Capital: <span className='countryDetails'> {data.capital}</span>
+          </h4>
         </div>
       </div>
     </div>
